@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "startbootstrap-new-age-gh-pages",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
