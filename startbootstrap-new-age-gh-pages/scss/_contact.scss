@@ -20,6 +20,14 @@ section.contact {
                 color: white;
                 border-radius: 100%;
             }
+            &.social-email {
+                a {
+                    background-color: darkgrey;
+                    &:hover {
+                        background-color: grey;
+                    }
+                }
+            }
             &.social-twitter {
                 a {
                     background-color: $brand-twitter;
@@ -41,6 +49,22 @@ section.contact {
                     background-color: $brand-google-plus;
                     &:hover {
                         background-color: darken($brand-google-plus, 5%);
+                    }
+                }
+            }
+            &.social-reddit {
+                a {
+                    background-color: $brand-reddit;
+                    &:hover {
+                        background-color: darken($brand-reddit, 5%);
+                    }
+                }
+            }
+            &.social-telegram {
+                a {
+                    background-color: $brand-telegram;
+                    &:hover {
+                        background-color: darken($brand-telegram, 5%);
                     }
                 }
             }
