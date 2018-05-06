@@ -26,6 +26,8 @@
     <!-- Custom styles for this template -->
     <link href="css/new-age.min.css" rel="stylesheet">
 
+    <link rel="icon" href="favicon.ico" type="image/png" sizes="16x16">
+
   </head>
 
   <body id="page-top">
@@ -87,9 +89,9 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8 mx-auto">
-            <h2 class="section-heading">Try a new advanced learning experience</h2>
-            <p>Literati is the first app with instant quality translation on tap.</p>
-            <p>Install the alpha version on Android or iOS now!</p>
+            <h2 class="section-heading">Install the app</h2>
+            <p>Literati is the first to bring you instant translation on tap.</p>
+            <p>Try the alpha version on Android or iOS now!</p>
             <div class="badges">
               <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a>
               <a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt=""></a>
@@ -102,9 +104,14 @@
     <section class="features" id="features">
       <div class="container">
         <div class="section-heading text-center">
-          <h2>Advanced language learning</h2>
-          <p class="text-muted">Literati is designed for advanced language learners - fresh content, more languages, high level.</p>
+          <h2>A new learning experience</h2>
+          <p class="text-muted">Literati is designed for advanced language learners.</p>
+          <br><p class="text-muted">You learn by enjoying fresh content from the real world.</p>
+          <br><p class="text-muted">When you see a word you do not know, you just tap to see the translation.</p>
+          <br><p class="text-muted">All the words you translate are saved for you to study.</p>
           <hr>
+          <br>
+          <p class="text-muted">With Literati you can learn:<p>
           <br>
           <h4>हिंदी  español  ελληνικά  中文  français  русский  English  한국어  italiano  日本語  Deutsch  հայերեն  catalá  عربى</h4>
           <p class="text-muted">Arabic, Armenian, Catalan, English, French, German, Greek, Hindi, Italian, Korean, Japanese, Russian, Spanish</p>
@@ -134,15 +141,15 @@
                   <div class="feature-item">
                     <i class="icon-globe-alt text-primary"></i>
                     <h3>More Languages</h3>
-                    <p class="text-muted">Our scalable technology lets us add new and interesting language fast.</p>
-                    <p class="text-muted">Try Catalan or <a href="mailto:languages@literatiapp.com">request a language</a>!</p>
+                    <p class="text-muted">Literati technology can scale to hundreds of languages.</p>
+                    <p class="text-muted"><a href="mailto:languages@literatiapp.com">Request a new language!</a></p>
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="feature-item">
                     <i class="icon-feed text-primary"></i>
                     <h3>Fresh Content</h3>
-                    <p class="text-muted">Literati updates with real top stories from top publishers every minute.</p>
+                    <p class="text-muted">Literati updates with top stories from top publishers.</p>
                     <p class="text-muted">Learn while enjoying fresh content!</p>
                   </div>
                 </div>
@@ -152,7 +159,7 @@
                   <div class="feature-item">
                     <i class="icon-screen-smartphone text-primary"></i>
                     <h3>Instant Translation</h3>
-                    <p class="text-muted">Literati is the first app with instant quality translation on tap.</p>
+                    <p class="text-muted">Literati translates instantly.</p>
                     <p class="text-muted">Just to tap to translate any word!</p>
                   </div>
                 </div>
@@ -180,6 +187,24 @@
       </div>
       <div class="overlay"></div>
     </section>
+    <script>
+      var i = 0;
+      function setImg () {
+        // Preload
+        var img = new Image();
+        img.onload = function()
+        {
+          const el = document.getElementsByClassName('cta')[0];
+          el.style.backgroundImage = 'url(img/bg-cta-' + i + '.jpg)';
+          i++;
+          if (i > 8) {
+            i = 0;
+          }
+        };
+        img.src = 'img/bg-cta-' + i + '.jpg';
+      }
+      setInterval(setImg, 4000);
+    </script>
 
     <section class="contact bg-primary" id="contact">
       <div class="container">
@@ -193,8 +218,6 @@
               <i class="fa fa-envelope"></i>
             </a>
           </li>
-        </ul>
-        <ul class="list-inline list-social">
           <li class="list-inline-item social-telegram">
             <a target="_blank" href="https://t.me/joinchat/H9ae6BJKUmEXkTvuNKgA4A">
               <i class="fa fa-telegram"></i>
@@ -221,7 +244,6 @@
 
     <footer>
       <div class="container">
-        <p>&copy; Literati 2018. All Rights Reserved.</p>
         <ul class="list-inline">
           <li class="list-inline-item">
             <a href="mailto:legal@literatiapp.com">Legal</a>

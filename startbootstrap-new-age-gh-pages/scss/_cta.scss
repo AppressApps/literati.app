@@ -2,7 +2,8 @@
 section.cta {
     position: relative;
     padding: 250px 0;
-    background-image: url('../img/bg-cta.jpg');
+    transition:all 3000ms;
+    background-image: url('../img/bg-cta-0.jpg');
     background-position: center;
     @include background-cover;
     .cta-content {
