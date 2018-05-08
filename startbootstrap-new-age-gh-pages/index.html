@@ -21,7 +21,13 @@
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
     <!-- Plugin CSS -->
-    <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
+    <link rel="stylesheet" href="https://marvelapp.github.io/devices.css/assets/devices.min.css" type="text/css">
+    <style>
+      .marvel-device.nexus5 {
+          width: 90%;
+          height: 90%;
+      }
+    </style>
 
     <!-- Custom styles for this template -->
     <link href="css/new-age.min.css" rel="stylesheet">
@@ -37,7 +43,6 @@
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">Literati</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
           <i class="fa fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -67,17 +72,17 @@
             </div>
           </div>
           <div class="col-lg-5 my-auto">
+
             <div class="device-container">
-              <div class="device-mockup iphone6_plus portrait black">
-                <div class="device">
-                  <div class="screen">
-                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                    <img src="img/demo-screen.gif" class="img-fluid" alt="">
+
+              <div class="marvel-device nexus5">
+                  <div class="top-bar"></div>
+                  <div class="sleep"></div>
+                  <div class="volume"></div>
+                  <div class="camera"></div>
+                  <div class="screen" style="background-color: black; bordr-radius: 3px;">
+                      <img src="img/demo-screen.gif" class="img-fluid" alt="">
                   </div>
-                  <div class="button">
-                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -89,12 +94,12 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8 mx-auto">
-            <h2 class="section-heading">Install the app</h2>
+            <h2 class="section-heading">Try Literati now</h2>
             <p>Literati is the first to bring you instant translation on tap.</p>
-            <p>Try the alpha version on Android or iOS now!</p>
+            <p>Install the alpha version on Android or iOS now!</p>
             <div class="badges">
-              <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a>
-              <a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt=""></a>
+              <a target="_blank" class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a>
+              <a target="_blank" class="badge-link" href="#"><img src="img/app-store-badge.svg" alt=""></a>
             </div>
           </div>
         </div>
@@ -113,24 +118,22 @@
           <br>
           <p class="text-muted">With Literati you can learn:<p>
           <br>
-          <h4>हिंदी  español  ελληνικά  中文  français  русский  English  한국어  italiano  日本語  Deutsch  հայերեն  catalá  عربى</h4>
-          <p class="text-muted">Arabic, Armenian, Catalan, English, French, German, Greek, Hindi, Italian, Korean, Japanese, Russian, Spanish</p>
+          <h4>español  हिंदी  français  русский  English  한국어  italiano  日本語  Deutsch  հայերեն  عربى</h4>
+          <p style="color: lightgrey; text-transform: uppercase; font-size: x-small;">Arabic Armenian English French German Hindi Italian Korean Japanese Russian Spanish</p>
           <br>
           <p class="text-muted">More languages coming soon!</p>
         </div>
         <div class="row">
           <div class="col-lg-4 my-auto">
             <div class="device-container">
-              <div class="device-mockup nexus7 portrait black">
-                <div class="device">
-                  <div class="screen">
-                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                    <img src="img/demo-screen.gif" class="img-fluid" alt="">
+              <div class="marvel-device nexus5">
+                  <div class="top-bar"></div>
+                  <div class="sleep"></div>
+                  <div class="volume"></div>
+                  <div class="camera"></div>
+                  <div class="screen" style="background-color: black; bordr-radius: 3px;">
+                      <img src="img/demo-screen.gif" class="img-fluid" alt="">
                   </div>
-                  <div class="button">
-                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -142,7 +145,7 @@
                     <i class="icon-globe-alt text-primary"></i>
                     <h3>More Languages</h3>
                     <p class="text-muted">Literati technology can scale to hundreds of languages.</p>
-                    <p class="text-muted"><a href="mailto:languages@literatiapp.com">Request a new language!</a></p>
+                    <p class="text-muted"><a target="_blank" href="mailto:languages@literatiapp.com">Request a new language!</a></p>
                   </div>
                 </div>
                 <div class="col-lg-6">
@@ -182,14 +185,14 @@
       <div class="cta-content">
         <div class="container">
           <h2>Literati:<br>advanced<br>language<br>learning</h2>
-          <a href="#install" class="btn btn-outline btn-xl js-scroll-trigger">Install the app</a>
+          <a href="#install" class="btn btn-outline btn-xl js-scroll-trigger">Try it now</a>
         </div>
       </div>
       <div class="overlay"></div>
     </section>
     <script>
       var i = 0;
-      function setImg () {
+      function setCtaImg () {
         // Preload
         var img = new Image();
         img.onload = function()
@@ -203,7 +206,7 @@
         };
         img.src = 'img/bg-cta-' + i + '.jpg';
       }
-      setInterval(setImg, 4000);
+      setInterval(setCtaImg, 4000);
     </script>
 
     <section class="contact bg-primary" id="contact">
@@ -246,13 +249,13 @@
       <div class="container">
         <ul class="list-inline">
           <li class="list-inline-item">
-            <a href="mailto:legal@literatiapp.com">Legal</a>
+            <a target="_blank" href="mailto:legal@literatiapp.com">Legal</a>
           </li>
           <li class="list-inline-item">
-            <a href="mailto:privacy@literatiapp.com">Privacy</a>
+            <a target="_blank" href="mailto:privacy@literatiapp.com">Privacy</a>
           </li>
           <li class="list-inline-item">
-            <a href="mailto:contact@literatiapp.com">Contact</a>
+            <a target="_blank" href="mailto:contact@literatiapp.com">Contact</a>
           </li>
         </ul>
       </div>

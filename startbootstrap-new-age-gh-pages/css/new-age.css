@@ -285,6 +285,7 @@ section.features .feature-item i {
 section.cta {
   position: relative;
   transition: all 3000ms;
+  background-color: black;
   background-image: url("../img/bg-cta-0.jpg");
   background-position: center;
   -webkit-background-size: cover;
@@ -455,7 +456,11 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   text-transform: uppercase;
 }
 
+.btn:hover, .btn:active {
+  background-color: rgba(253, 204, 82, 0.3);
+}
+
 .btn-xl {
-  font-size: 11px;
+  font-size: 1em;
   padding: 15px 45px;
 }

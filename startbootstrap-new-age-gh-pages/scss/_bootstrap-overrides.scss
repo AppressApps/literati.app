@@ -33,7 +33,11 @@
     @include alt-font;
 }
 
+.btn:hover, .btn:active {
+    background-color: fade-out($theme-primary, .7);
+}
+
 .btn-xl {
-    font-size: 11px;
+    font-size: 1em;
     padding: 15px 45px;
 }
