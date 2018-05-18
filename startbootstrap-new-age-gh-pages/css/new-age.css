@@ -286,7 +286,7 @@ section.cta {
   position: relative;
   transition: all 3000ms;
   background-color: black;
-  background-image: url("../img/bg-cta-0.jpg");
+  /*background-image: url('../img/bg-cta-0.jpg');*/
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
