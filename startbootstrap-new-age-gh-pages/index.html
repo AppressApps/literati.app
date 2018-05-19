@@ -3,13 +3,13 @@
 
   <head>
 
-    <title>Literati: advanced language learning</title>
+    <title>Literati: learn languages by reading</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Learn a language while enjoying fresh content. Tap to translate any word instantly.">
     <meta name="author" content="">
-    <meta property="og:title" content="Literati: advanced language learning" />
+    <meta property="og:title" content="Literati: learn languages by reading" />
     <meta property="og:url" content="https://literatiapp.com" />
     <meta property="og:image" content="https://literatiapp.com/img/demo-screen.gif" />
     <meta property="og:video" content="https://literatiapp.com/img/demo-screen.gif" />
@@ -264,11 +264,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato%7cMuli%7cCatamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
     <!-- Device plugin CSS -->
     <link rel="stylesheet" href="vendor/marvelapp/devices.min.css" type="text/css">
@@ -278,6 +275,11 @@
           height: 80%;
       }
     </style>
+
+    <!-- CSS that for below the fold only that can be loaded async -->
+    <noscript id="deferred-styles">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </noscript>
 
     <!-- Custom styles for this template -->
     <link async href="css/new-age.min.css" rel="stylesheet">
@@ -290,9 +292,25 @@
     <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for this template -->
-    <!-- inline src="js/new-age.min.js" -->
     <script async>
+    <!-- inline src="js/new-age.min.js" -->
       !function(a){"use strict";a('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function(){if(location.pathname.replace(/^\//,"")==this.pathname.replace(/^\//,"")&&location.hostname==this.hostname){var e=a(this.hash);if((e=e.length?e:a("[name="+this.hash.slice(1)+"]")).length)return a("html, body").animate({scrollTop:e.offset().top-48},1e3,"easeInOutExpo"),!1}}),a(".js-scroll-trigger").click(function(){a(".navbar-collapse").collapse("hide")}),a("body").scrollspy({target:"#mainNav",offset:54});var e=function(){a("#mainNav").offset().top>100?a("#mainNav").addClass("navbar-shrink"):a("#mainNav").removeClass("navbar-shrink")};e(),a(window).scroll(e)}(jQuery);
+    </script>
+
+    <!-- load deferred CSS -->
+    <!-- from https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery#example -->
+    <script async>
+      var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+          window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+      else window.addEventListener('load', loadDeferredStyles);
     </script>
 
   </body>
