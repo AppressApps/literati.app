@@ -200,7 +200,6 @@ header.masthead .device-container .screen img {
 
 section.download {
   position: relative;
-  padding: 150px 0;
 }
 
 section.download h2 {
@@ -299,12 +298,15 @@ section.cta .cta-content {
   z-index: 1;
 }
 
+section.cta .cta-content h1, section.cta .cta-content h2, section.cta .cta-content h3, section.cta .cta-content h4, section.cta .cta-content h5 {
+  color: white;
+}
+
 section.cta .cta-content h2 {
   font-size: 50px;
   max-width: 450px;
   margin-top: 0;
   margin-bottom: 25px;
-  color: white;
 }
 
 @media (min-width: 768px) {

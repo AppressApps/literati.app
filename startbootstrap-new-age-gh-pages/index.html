@@ -3,15 +3,15 @@
 
   <head>
 
-    <title>Literati: learn languages by reading</title>
+    <title>Literati - Learn languages by reading</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Learn a language while enjoying fresh content. Tap to translate any word instantly.">
     <meta name="author" content="">
-    <meta property="og:title" content="Literati: learn languages by reading" />
+    <meta property="og:title" content="Literati - Learn languages by reading" />
     <meta property="og:url" content="https://literatiapp.com" />
-    <meta property="og:image" content="https://literatiapp.com/img/demo-screen.gif" />
+    <meta property="og:image" content="https://literatiapp.com/img/og-img.png" />
     <meta property="og:video" content="https://literatiapp.com/img/demo-screen.gif" />
 
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
@@ -30,7 +30,35 @@
     <link rel="manifest" href="/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#2962ff">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato%7cMuli%7cCatamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link async href="css/new-age.min.css" rel="stylesheet">
+    <style>
+      .marvel-device.nexus5 {
+          width: 80%;
+          height: 80%;
+      }
+    </style>
+
+    <!-- CSS that for below the fold only that can be loaded async -->
+    <noscript id="deferred-styles">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </noscript>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 
   </head>
 
@@ -64,7 +92,8 @@
         <div class="row h-100">
           <div class="col-lg-7 my-auto">
             <div class="header-content mx-auto">
-              <h1 class="mb-5">Learn a language while enjoying fresh content</h1>
+              <h2 class="mb-5">Learn languages by reading</h1>
+              <h1 class="mb-5">Enjoy fresh content from the real world</h1>
               <h1 class="mb-5">Tap to translate any word instantly</h1>
               <a href="#install" class="btn btn-outline btn-xl js-scroll-trigger">Install the app</a>
             </div>
@@ -96,8 +125,38 @@
             <p>Literati is the first to bring you instant translation on tap.</p>
             <p>Install the alpha version on Android or iOS now!</p>
             <div class="badges">
-              <a target="_blank" class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a>
-              <a target="_blank" class="badge-link" href="mailto:ios@literatiapp.com?subject=Waiting%20list&amp;body=Put%20me%20the%20waiting%20list%20for%20the%20iOS%20app!"><img src="img/app-store-badge.svg" alt=""></a>
+              <a target="_blank" class="badge-link" href="#">
+                <img src="img/google-play-badge.svg" alt="">
+              </a>
+              <a class="badge-link" data-target="#myModal" data-toggle="modal" href="#myModal">
+                <img src="img/app-store-badge.svg" alt="">
+              </a>
+              <!-- Modal -->
+              <div id="myModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">Literati for iOS</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <h3 class="modal-title">Launching soon!</h3>
+                    <p>Sign up to the waiting list and we will contact you.</p>
+                    <div class="modal-body">
+
+                      <form action="https://formspree.io/ios@literatiapp.com"
+                            method="POST">
+                          <p>
+                            <input class="form-control" type="email" name="email" placeholder="your@email.com">
+                            <input style="display:none;" type="text" name="_gotcha">
+                            <input type="hidden" name="_next" value="/">
+                          </p>
+                          <input type="submit" class="btn btn-tertiary btn-xl" value="Sign up">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -140,22 +199,12 @@
               <div class="row">
                 <div class="col-lg-6">
                   <div class="feature-item">
-                    <i class="icon-globe-alt text-primary"></i>
-                    <h3>More Languages</h3>
-                    <p class="text-muted">Literati technology can scale to hundreds of languages.</p>
-                    <p class="text-muted"><a target="_blank" href="mailto:languages@literatiapp.com">Request a new language!</a></p>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="feature-item">
                     <i class="icon-feed text-primary"></i>
                     <h3>Fresh Content</h3>
                     <p class="text-muted">Literati updates with top stories from top publishers.</p>
                     <p class="text-muted">Learn while enjoying fresh content!</p>
                   </div>
                 </div>
-              </div>
-              <div class="row">
                 <div class="col-lg-6">
                   <div class="feature-item">
                     <i class="icon-screen-smartphone text-primary"></i>
@@ -164,12 +213,22 @@
                     <p class="text-muted">Just to tap to translate any word!</p>
                   </div>
                 </div>
+                </div>
+              <div class="row">
                 <div class="col-lg-6">
                   <div class="feature-item">
                     <i class="icon-graph text-primary"></i>
                     <h3>Data Driven</h3>
                     <p class="text-muted">Words you translate and articles you read are saved for you.</p>
                     <p class="text-muted">Quiz yourself and track your progress!</p>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="feature-item">
+                    <i class="icon-globe-alt text-primary"></i>
+                    <h3>More Languages</h3>
+                    <p class="text-muted">Literati technology can scale to hundreds of languages.</p>
+                    <p class="text-muted"><a target="_blank" href="mailto:languages@literatiapp.com">Request a new language!</a></p>
                   </div>
                 </div>
               </div>
@@ -182,8 +241,8 @@
     <section class="cta">
       <div class="cta-content">
         <div class="container">
-          <h2>Literati:<br>advanced<br>language<br>learning</h2>
-          <a href="#install" class="btn btn-outline btn-xl js-scroll-trigger">Try it now</a>
+          <h2>Advanced<br>language<br>learning</h2>
+          <a href="#install" class="btn btn-outline btn-xl js-scroll-trigger">Try Literati now</a>
         </div>
       </div>
       <div class="overlay"></div>
@@ -259,34 +318,6 @@
         </ul>
       </div>
     </footer>
-
-    <!-- Bootstrap core CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom fonts for this template -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato%7cMuli%7cCatamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link async href="css/new-age.min.css" rel="stylesheet">
-    <style>
-      .marvel-device.nexus5 {
-          width: 80%;
-          height: 80%;
-      }
-    </style>
-
-    <!-- CSS that for below the fold only that can be loaded async -->
-    <noscript id="deferred-styles">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </noscript>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for this template -->
     <script async>
